@@ -9,11 +9,39 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+   
+    
+    
+    
+    
+    @IBOutlet weak var helloCharacterlabel: UILabel!
+   
+    
+    var sceneDidBecomeActiveCount = 0
+    func updateView() { if  (sceneDidBecomeActiveCount < 0){
+         helloCharacterlabel.text = "You left  \(sceneDidBecomeActiveCount) times please tap the click here button to contnue."
+    }else{ helloCharacterlabel.text = "Hello, my name is Mocha the Red Panda."
+        
+        return updateView()
+        
     }
-
-
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    @IBOutlet weak var SegueButton: UIButton!
+    
+    @IBOutlet weak var onTapSegue: UIButton!
+    
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            // Do any additional setup after loading the view.
+    
 }
 
+}
