@@ -102,6 +102,9 @@
                                 <state key="normal" title="Goodbye :)">
                                     <color key="titleColor" red="0.03592935234932311" green="0.0" blue="0.31023953045685282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BPa-Hw-BFn" kind="showDetail" identifier="mySegueTwo" id="0B9-8i-peh"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="pandaart-2" translatesAutoresizingMaskIntoConstraints="NO" id="mGt-2a-Pmd">
                                 <rect key="frame" x="33" y="0.0" width="343" height="490"/>
@@ -123,9 +126,46 @@
             </objects>
             <point key="canvasLocation" x="701" y="1"/>
         </scene>
+        <!--View Controller Two-->
+        <scene sceneID="ppz-00-kjh">
+            <objects>
+                <viewController id="BPa-Hw-BFn" customClass="ViewControllerTwo" customModule="woodbineshellobot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IGE-zI-6sS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="pandaart-2" translatesAutoresizingMaskIntoConstraints="NO" id="j2e-cv-apm">
+                                <rect key="frame" x="43" y="58" width="348" height="522"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFV-ce-Oeg">
+                                <rect key="frame" x="43" y="570" width="329" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="You, have completed  everything! Please exit the application ! :)">
+                                        <attributes>
+                                            <font key="NSFont" size="28" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JpV-ld-KVW"/>
+                        <color key="backgroundColor" red="0.97776367870000003" green="0.86639535209999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="goodbyeLabel" destination="UFV-ce-Oeg" id="9gG-p1-aRP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KiX-Pt-EE3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1594" y="-91"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="circle.fill" catalog="system" width="32" height="32"/>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="pandaart-1" width="300" height="450"/>
         <image name="pandaart-2" width="300" height="450"/>
         <systemColor name="linkColor">
